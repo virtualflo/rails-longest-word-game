@@ -40,6 +40,11 @@ group :development, :test do
   gem 'byebug', platform: :mri
 end
 
+ group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'

@@ -1,0 +1,14 @@
+<h1>GameController#grid</h1>
+<p>Find me in app/views/game_controller/grid.html.erb</p>
+
+<span>HERE IS THE GRID</span>
+<%= @generated_grid %>
+
+<form action="/result">
+  <label for="question">Give an answer</label>
+  <input type="text" id="question" name="result" placeholder="what's your answer?">
+  <input type="hidden" id="grid" name="grid"
+  value="<%= @generated_grid.join("") %>">
+  <input type="hidden" id="time" name="start_time" value="<%= @start_time%>">
+  <input type="submit" value="Go !">
+</form>
